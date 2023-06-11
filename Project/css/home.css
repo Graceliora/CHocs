@@ -1,0 +1,328 @@
+html, body {
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+  
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #FFFDF9;
+}
+  
+.navigation {
+    height: 64px;
+    background-image: linear-gradient(to right, #725343, #AA8D7D);
+    display: flex;
+}
+  
+.navigation .logo {
+    max-width: 100%;
+    padding-left: 5vw;
+}
+  
+.navigation .logo a {
+    display: flex;
+    align-items: center;
+    height: 60px;
+}
+  
+.navigation .logo a img {
+    max-width: 100%;
+    max-height: 100%;
+}
+  
+.navigation .navbar {
+    padding: 0 30px;
+    position: absolute;
+    right: 0;
+}
+  
+.navigation .navbar ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    list-style: none;
+}
+  
+.navigation .navbar ul li a {
+    text-align: center;
+    text-decoration: none;
+    color: #FFFDF9;
+    font-size: 16px;
+    display: block;
+    /* height: 60px; */
+    line-height: 60px;
+    cursor: pointer;
+    padding: 0 30px;
+}
+  
+.navigation .navbar ul li a:hover {
+    text-decoration: underline;
+}
+  
+.navigation .navbar .active {
+      font-weight: bold;
+}
+  
+.navigation .navbar ul .close {
+    display: none;
+    text-align: right;
+    padding: 10px;
+}
+  
+.navigation .navbar ul .close span {
+    font-size: 40px;
+    color: #AA8D7D;
+    padding: 0 10px;
+    cursor: pointer;
+}
+  
+.navigation .navbar .hamburgerBar {
+    padding: 18px 8px;
+    display: none;
+    cursor: pointer;
+}
+  
+@media only screen and (max-width: 950px) {
+  
+    .navigation .navbar ul {
+      position: fixed;
+      left: 100%;
+      flex-direction: column;
+      background: #FFFDF9;
+      width: 100%;
+      height: 50%;
+      transition: left .3s;
+    }
+  
+    .navigation .navbar ul li a {
+      padding: 10px;
+      font-size: 16px;
+      line-height: normal;
+      color: #725343;
+    }
+  
+    .navigation .navbar ul .close {
+      display: block;
+    }
+  
+    .navigation .navbar .hamburgerBar {
+      display: flex;
+    }
+  
+    .navigation .navbar ._Menus-show {
+      left: 0;
+    }
+  }
+
+.title {
+    font-family: 'Hina Mincho', serif;
+	  font-size: 7vw;
+    color: #784A36;
+    text-align: center;
+    margin: 0px;
+    padding: 30px 0px 0px 0px;
+}
+
+.hero {
+    padding: 30px 0px 0px 0px;
+}
+
+.title2 {
+    font-family: 'Hina Mincho', serif;
+	  font-size: 6vw;
+    color: #AA8D7D;
+    text-shadow: 0px 4px 4px #D9C5BB;
+    text-align: center;
+    padding: 30px 0px 0px 0px;
+}
+
+.menus {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    padding-top: 50px;
+}
+
+.menu {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.middle-bottom {
+    width: 100%;
+    position: absolute;
+    top: 84%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2vw;
+    font-weight: bold;
+    line-height: 125%;
+}
+
+.menus img {
+    height: 35vw;   
+}
+
+.menus img:hover {
+    box-shadow: 2px 4px 32px #AA8D7D;
+    border-radius: 1.5vw;
+}
+
+#best-sellers {
+    padding-bottom: 0px;
+}
+
+#best-sellers #images {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    padding-top: 50px;
+}
+
+#best-sellers #images .image {
+	  height: 35vw;
+}
+
+#best-sellers .image:hover {
+    box-shadow: 2px 4px 32px #AA8D7D;
+    border-radius: 1.5vw;
+}
+
+#recommendations #images {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    padding-top: 50px;
+}
+
+#recommendations #images .image {
+	  height: 35vw;
+}
+
+#recommendations .image:hover {
+    box-shadow: 2px 4px 32px #AA8D7D;
+    border-radius: 1.5vw;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15vw;
+}
+
+button {
+    padding: 0.5vw 2vw 0.5vw 2vw;
+    font-family: 'Hina Mincho', serif;
+    font-size: 3vw;
+    background-color: #FFFDF9;
+    border-width: 0.1vw;
+    border-color: #AA8D7D;
+    color: #AA8D7D;
+    cursor: pointer;
+}
+
+footer {
+    font-family: 'Poppins', sans-serif;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    box-shadow: 0 -20px 20px -20px #D9C5BB;
+    border-radius: 50px;
+}
+
+.medsos {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 40%;
+    margin-right: 40%;
+    margin-bottom: 2vw;
+}
+
+.medsos .image {
+	  width: 3vw; 
+}
+
+.menuFooter {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 20vw;
+    margin-right: 20vw;
+    margin-bottom: 2vw;
+}
+
+.menuFooter a{
+    color: #AA8D7D;
+    text-decoration: none;
+    font-size: 1.5vw;
+}
+
+
+.menuFooter a:hover{
+	  text-decoration: underline;
+}
+
+.copyright {
+    font-size: 1vw;
+    text-align: center;
+    color: #AAAAAA;
+}
+
+@media only screen and (max-width: 800px) {
+
+    footer {
+        font-family: 'Poppins', sans-serif;
+        padding-top: 5vw;
+        padding-bottom: 5vw;
+        box-shadow: 0 -20px 20px -20px #D9C5BB;
+        border-radius: 50px;
+    }
+
+    .medsos {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-left: 30vw;
+        margin-right: 30vw;
+        margin-bottom: 2vw;
+    }
+
+    .medsos .image {
+        width: 20px;
+    }
+
+    .menuFooter {
+        flex-direction: column;
+    }
+
+    .menuFooter a{
+        color: #AA8D7D;
+        text-decoration: none;
+        font-size: 12px;
+    }
+
+    .copyright {
+        font-size: 8px;
+        text-align: center;
+        color: #AAAAAA;
+    }
+    
+}

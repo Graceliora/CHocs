@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="HandheldFriendly" content="true">
+    <title>CHocs</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.svg">
+    <link rel="stylesheet" href="/css/ourProducts.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Hina+Mincho&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
+</head>
+<body>
+    <header>
+
+        <div class="navigation">
+
+            <div class="logo">
+                <a href="home.html"><img src="../images/logo.svg" alt="logo"></a>
+            </div>
+            
+            <div class="navbar">
+          
+              <div class="hamburgerBar" onclick="Show()">
+                <img src="../images/hamburgerBar.svg" alt="">
+              </div>
+          
+              <ul id="menu">
+                  <li class="close"><span onclick="Hide()">×</span></li>
+                  <li><a href="/html/home.html">Home</a></li>
+                  <li><a class="active" href="/html/ourProducts.html">Our Products</a></li>
+                  <li><a href="/html/buyProducts.html">Buy Products</a></li>
+                  <li><a href="/html/aboutUs.html">About Us</a></li>
+                  <li><a href="/html/findUs.html">Find Us</a></li>
+              </ul>
+          
+            </div>
+          </div>
+
+        <div id="heading">
+            <p class="title">All Products</p>
+        </div>
+
+    </header>
+
+    <main>
+
+        <div id="products">
+            <div class="menus" id="image1">
+
+                <div class="menu">
+                    <img src="../images/menu/darkChocolate.png" alt="">
+                    <div class="middle-bottom">CHoc<br>Dark Chocolate</div>
+                    <div class="bottom">Click for more details</div>
+
+                </div>
+    
+                <div class="menu">
+                    <img src="../images/menu/lavaCake.png" alt="">
+                    <div class="middle-bottom">CHoc<br>Lava Cake</div>
+                    <div class="bottom">Click for more details</div>
+                </div>
+    
+                <div class="menu">
+                    <img src="../images/menu/butterFlower.png" alt="">
+                    <div class="middle-bottom">CHoc<br>Butter Flower</div>
+                    <div class="bottom">Click for more details</div>
+                </div>
+    
+            </div>
+            <div class="menus" id="image2">
+
+                <div class="menu">
+                    <img src="../images/menu/whiteChoc.png" alt="">
+                    <div class="middle-bottom">CHoc<br>White Choc</div>
+                    <div class="bottom">Click for more details</div>
+                </div>
+    
+                <div class="menu">
+                    <img src="../images/menu/mountLava.png" alt="">
+                    <div class="middle-bottom">CHoc<br>Mount Lava</div>
+                    <div class="bottom">Click for more details</div>
+                </div>
+    
+                <div class="menu">
+                    <img src="../images/menu/whiteForest.png" alt="">
+                    <div class="middle-bottom">CHoc<br>White Forest</div>
+                    <div class="bottom">Click for more details</div>
+                </div>
+    
+            </div>
+            <div class="menus" id="image3">
+
+                <div class="menu">
+                    <img src="../images/menu/creamyButter.png" alt="">
+                    <div class="middle-bottom">CHoc<br>Creamy Butter</div>
+                    <div class="bottom">Click for more details</div>
+                </div>
+    
+                <div class="menu">
+                    <img src="../images/menu/berryCreamy.png" alt="">
+                    <div class="middle-bottom">CHoc<br>Berry Creamy</div>
+                    <div class="bottom">Click for more details</div>
+                </div>
+    
+                <div class="menu">
+                    <img src="../images/menu/wallCreamy.png" alt="">
+                    <div class="middle-bottom">CHoc<br>Wall Creamy</div>
+                    <div class="bottom">Click for more details</div>
+                </div>
+    
+            </div>
+            <div class="menus" id="image4">
+
+                <div class="menu">
+                    <img src="../images/menu/chocoDonut.png" alt="">
+                    <div class="middle-bottom">CHoc<br>Choco Donut</div>
+                    <div class="bottom">Click for more details</div>
+                </div>
+    
+                <div class="menu">
+                    <img src="../images/menu/layerCake.png" alt="">
+                    <div class="middle-bottom">CHoc<br>Layer Cake</div>
+                    <div class="bottom">Click for more details</div>
+                </div>
+    
+                <div class="menu">
+                    <img src="../images/menu/chocoBall.png" alt="">
+                    <div class="middle-bottom">CHoc<br>Choco Ball</div>
+                    <div class="bottom">Click for more details</div>
+                </div>
+    
+            </div>
+        </div>
+
+        <div id="myModal" class="modal">
+
+            <div class="modal-content">
+                <span class="closemodal">&times;</span>
+
+                <div id="left">
+                    <img src="../images/menu/lavaCake.png" class="modalimage" alt="">
+                </div>
+                <div id="right">
+                    <p class="productName">CHoc Mount Lava</p>
+                    <p class="price">IDR 175.000</p>
+                    <p class="title">Description</p>
+                    <p class="description">“CHoc Mount Lava” is a baked chocolate sponge cake, covered with melted chocolate on top, like lava coming out of a mountain. Enjoy the sensation of crunchy hazelnuts in the cake.</p>
+                    <p class="title">Ingredients</p>
+                    <ul class="ingredients">
+                        <li>Sugar</li>
+                        <li>Flour</li>
+                        <li>Belgian Chocolate</li>
+                        <li>Hazelnut</li>
+                    </ul>
+                </div>
+
+            </div>
+          
+          </div>
+
+    </main>
+
+    <footer>
+        <div class="medsos">
+            <a href="https://www.instagram.com/" target="_blank"><img src="../images/medsos/Instagram.svg" class="image" alt=""></a>
+            <a href="https://www.facebook.com/" target="_blank"><img src="../images/medsos/Facebook.svg" class="image" alt=""></a>
+            <a href="https://twitter.com/" target="_blank"><img src="../images/medsos/Twitter.svg" class="image" alt=""></a>
+            <a href="https://twitter.com/" target="_blank"><img src="../images/medsos/Whatsapp.svg" class="image" alt=""></a>
+        </div>
+        <div class="menuFooter">
+            <a href="/html/home.html"><p>Home</p></a>
+            <a href="/html/ourProducts.html"><p>Our Products</p></a>
+            <a href="/html/buyProducts.html"><p>Buy Products</p></a>
+            <a href="/html/aboutUs.html"><p>About Us</p></a>
+            <a href="/html/findUs.html"><p>Find Us</p></a>
+        </div>
+        <div class="copyright">
+            <p>Copyright 2022 CHocs Inc. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+
+    <script src="../myscript.js"></script>
+</body>
+</html>
